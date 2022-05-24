@@ -1,0 +1,139 @@
+:root{
+    --width-size: 235px;
+    --height-size: 80px;
+}
+body{
+    background-color: rgb(192, 192, 192);
+    font-family: 'Montserrat', sans-serif;
+}
+aside{
+    float: right;
+    padding-right: 60px;
+}
+#cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(192, 192, 192);
+    width: 100%;
+    margin-top: -9px;
+    position: fixed;
+    font-weight: bolder;
+}
+#botao-superior{
+    width: var(--width-size);
+    height: var(--height-size);
+
+    display: flex;
+   
+}
+#botao-menu{
+    display: flex;
+    flex-direction: row;
+
+    height: var(--height-size); 
+}
+
+.itens-menu{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+#botao-pesquisar{
+    display: flex;
+    flex-direction: row;
+    
+    height: var(--height-size); 
+    width: var(--width-size);
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.animacao:hover{
+    -webkit-transition: 0.5s ease-out;
+    background-color: rgb(105, 68, 68);
+}
+#vinho{
+    display: flex;
+    justify-content: center;
+}
+#redes-sociais{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    justify-content: space-between;
+    height: 200px;
+    position: fixed;
+}
+
+#compre-agora{
+    position: absolute;
+    top: 600px;
+    right: 580px;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#compre-agora:hover{
+    -webkit-transition: 0.5s ease-out;
+    background-color: rgb(105, 68, 68);
+}
+.itens-menu:hover{
+    -webkit-transition: 0.5s ease-out;
+    background-color: rgb(105, 68, 68);
+}
+#botao-superior:hover{
+    -webkit-transition: 0.5s ease-out;
+    background-color: rgb(105, 68, 68);
+}
+.logo-rede-social{
+    width: 22px;
+    height: 22px;
+}
+.logo-rede-social:hover{
+    width: 30px;
+    height: 30px;
+}
+#txt-img-vinho{
+    position: absolute;
+    top: 450px;
+    right: 480px;
+    width: 400px;
+    height: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+#pag-ent{
+    width: 1100px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.pag-ent-blocos{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px 2px rgb(131, 130, 130);
+}
