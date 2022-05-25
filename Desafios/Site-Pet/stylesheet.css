@@ -1,0 +1,109 @@
+body{
+    background-color: #fef7ed;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    height: 106px;
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    background-color: #fef7ed;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#dr-pet{
+    font-size: 30px;
+    display: flex;
+}
+#icon-patinha{
+    display: flex;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20%;
+}
+.itens-menu{
+    padding: 0% 8%;   
+}
+.itens-menu:hover{
+    -webkit-transition: 0.5s ease-out;
+    color: rgb(0, 0, 0,0.5);
+    text-shadow: 0 0 0.2em rgb(255, 243, 80), 0 0 0.2em rgb(255, 243, 80)
+}
+article{
+    height: max-content;
+    width: 100%;
+    height: 731px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+section{
+    height: max-content;
+    width: 80%;
+    height: 731px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#doguinho{
+    width: 500px;
+    height: 500px;
+     
+}
+#foto-doguinho{
+    border-radius: 50%;
+}
+#agende{
+    display: flex;
+    justify-content: center;
+    width: 204px;
+    height: 50px;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 30px;
+    background-color: rgb(255, 238, 0);
+}
+#agende:hover{
+    -webkit-transition: 0.5s ease-out;
+    background-color: black;
+    color:#fef7ed
+}
+#ligue{
+    height: 35px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 238, 0);
+}
+#sobre-mim{
+    margin-left: 30px;
+}
+footer{
+    background-color: rgb(255, 238, 0,0.8);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#redes-sociais{
+    height: 80%;
+    width: 40%;
+    border: solid black 1px;
+}
