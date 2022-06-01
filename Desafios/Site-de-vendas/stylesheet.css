@@ -44,9 +44,11 @@ aside{
 #botao-pesquisar{
     display: flex;
     flex-direction: row;
-    
     height: var(--height-size); 
     width: var(--width-size);
+}
+#txtBusca{
+    outline: none;
 }
 .botoes{
     display: flex;
@@ -136,4 +138,8 @@ aside{
     font-size: 15px;
     font-weight: bolder;
     box-shadow: 2px 2px 2px 2px rgb(131, 130, 130);
+}
+footer{
+    background-color: rgb(126, 125, 125);
+    height: 100px;
 }

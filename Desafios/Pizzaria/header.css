@@ -1,0 +1,43 @@
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -8px;
+}
+#cabecalho{
+    display: flex;
+    width: 90%;
+    height: 121px;
+    background-color: #fff;
+}
+#logo-principal{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3%;
+}
+#menu{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.itens-menu{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-top: 6%;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+#sacolinha{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 1240px;
+}

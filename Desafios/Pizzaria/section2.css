@@ -1,0 +1,139 @@
+#section2{
+    width:100%;
+    height: 1876px;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 4%;
+    background-color: rgb(244, 243, 239);
+}
+.sec2-esq{
+    
+    width: 641px;
+    height: 304px;
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: row;
+}
+#sec2-dir{
+    width: 341px;
+    margin: 0px 20px;
+}
+.sec2-esq-dir{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    align-items:flex-start;
+    padding: 24px 36px;
+}
+.identificador{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.comentario{
+    padding-top: 10%;
+    height: 60%;
+    margin: 0px;
+}
+.vizu-coment{
+    height: 20%;
+    border-top: solid grey 1px;
+    width: 100%;
+    margin-top: 5%;
+    font-size: 12px; font-weight:bolder; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5%;
+}
+p{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+}
+h2{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin:5% 0%;
+}
+#sec2-esq-geral{
+    display: flex;
+    flex-direction: column;
+}
+#sec2-bio{
+    margin: 15% 15%;
+}
+#sec2-bio h1{
+    font-size: 50px;
+}
+#sec2-bio p{
+    margin-top: 10%;
+    font-size: 16px;
+    font-weight: bolder;
+}
+#leiamais{
+    border-bottom: solid black 1px;
+    width: 90px;
+}
+#bloco-redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 339px;
+    height: 134px;
+    background-color: #107070;
+    margin-top: 10%;
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: aliceblue;
+}
+#news-letter{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-top: 10%;
+    text-decoration: none;
+    border: 0px;
+    align-items: center;
+}
+#news-letter h1{
+    font-size: 14px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#botao-newsletter{
+    margin-top: 10%;
+    border: solid 1px #107070;
+    background-color: #107070;
+    width: 204px;
+    text-align: center;
+    height: 30px;
+    width: 204px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#news-letter input{
+    width: 204px;
+    height: 17px;
+}
