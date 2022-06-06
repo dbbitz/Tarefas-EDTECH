@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#blocao{
+    border: solid black 1px;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-size: 30px;
+    font-weight: bolder;
+}
