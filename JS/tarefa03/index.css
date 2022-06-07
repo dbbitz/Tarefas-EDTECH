@@ -16,4 +16,10 @@ font-family: 'Montserrat', sans-serif;
 p{
     font-size: 30px;
     font-weight: bolder;
+    box-shadow: 1px 1px 1px;
+    background-color: rgb(224, 224, 224);
+}
+input{
+    border-radius: 0%;
+    border: solid rgb(156, 156, 156) 1px;
 }
