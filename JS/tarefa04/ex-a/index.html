@@ -14,11 +14,24 @@
 </head>
 
 <body>
-    <div>
-        <input type="text" name="" id="peso">
-        <input type="text" name="" id="altura">
-        <input type="button" value="Calcular" onclick="calcular()">
+    <div id="div-externa">
+        <h1>Calculadora de IMC</h1>
+        <div id="div-interna">
+            <div class="itens">
+                <label for="">Altura(cm)</label>
+                <input type="text" name="" id="peso">
+            </div>
+            <div class="itens">
+                <label for="">Peso(kg)</label>
+                <input type="text" name="" id="altura">
+            </div>
+            <div id="botao">
+                <input type="button" value="Calcular" onclick="calcular()">
+            </div>
+        </div>
+        <p>Resultado</p>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
