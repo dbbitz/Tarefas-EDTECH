@@ -50,5 +50,5 @@ function info() {
             break
     }
 
-    res.innerHTML = `Dia: ${dia}<br> Mês: ${mes} <br> Ano: ${ano} <br> ${dsem} <br> ${mmes} <br> ${new Date(ano,mes,dia).getTime()} `
+    res.innerHTML = `Dia: ${dia}<br> Mês: ${mes} <br> Ano: ${ano} <br> Dia da semana:${dsem} <br> Mês por extenso: ${mmes} <br> Data em milisegundo: ${new Date(ano,mes,dia).getTime()} `
 }
