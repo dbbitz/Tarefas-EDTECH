@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+#bloco-principal{
+    width: 600px;
+    height: 400px;
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#div-interna{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    border: solid black 1px;
+    border-radius: 50%;
+}
+option{
+    text-decoration: none;
+    border: solid black 1px;
+}
+input{
+    border: solid black 1px;
+}
