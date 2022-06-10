@@ -11,6 +11,8 @@ for (i = 0; i < 60; i++) {
 const txt = document.querySelector('p')
 var botao = document.querySelector('input')
 var titulo = document.querySelector('h1')
+var alarme = document.querySelector('audio')
+var som = new Audio('alarme.mp3')
 
 
 function cont() {
@@ -34,6 +36,7 @@ function cont() {
         if(min==0 && seg==0){
             parar()
             titulo.innerHTML = "Seu tempo acabou!"
+            alarme.innerHTML = som.play()
         }
         
         txt.innerHTML = `${min} : ${seg}`
@@ -46,6 +49,7 @@ function cont() {
         botao.style.background = "green"
         botao.addEventListener('click', cont)
         botao.removeEventListener('click', parar)
+        alarme.innerHTML = som.pause()
     }
     
     botao.removeEventListener('click', cont)
