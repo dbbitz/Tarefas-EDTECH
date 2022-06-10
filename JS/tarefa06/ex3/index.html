@@ -15,12 +15,20 @@
 
 <body>
     <div id="bloco-principal">
-        <h1>Escolha a data</h1>
-        <div>
-            <input type="date" name="" id="data">
-            <input type="button" value="OK" onclick="info()">
+        <h1>Alarme</h1>
+        <div id="bloco-secundario">
+            <div>
+                <label for="Minutos" class="itens">Minutos</label>
+                <select name="Minutos" id="min" class="itens"></select>
+            </div>
+            <div>
+                <label for="Segundos" class="itens">Segundos</label>
+                <select name="Segundos" id="seg" class="itens"></select>
+            </div>
+
+            <input type="button" id="botao" class="itens" value="Iniciar Contagem Regressiva" onclick="cont()">
         </div>
-        <p>Dia</p>
+        <p>Contador</p>
     </div>
     <script src="index.js"></script>
 </body>
