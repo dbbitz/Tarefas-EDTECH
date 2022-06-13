@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(185, 185, 185);
+    background-image: url('https://sm.ign.com/t/ign_br/news/t/take-two-c/take-two-ceo-namechecks-midnight-club-despite-a-13-year-wait_4fbu.h720.jpg');
+}
+#bloco-principal{
+    border: solid black 1px;
+    width: 700px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: baseline;
+    background-color: rgb(196, 196, 196);
+}
+select{
+    height: 30px;
+    border: solid black 2px;
+    font-size: 12px;
+    box-shadow: 2px 2px;
+
+}
+#bloco-interno{
+    margin-bottom: 30px; 
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+p{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 2%;
+}
+#info{
+    margin-top: 20px;
+    display: flex;
+    justify-content:flex-start;
+    width: 70%;
+    flex-direction: column;
+    
+}
+img{
+    background-color: rgb(177, 168, 168);
+    background-image: url();
+    border: solid black 2px;
+}

@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(185, 185, 185);
+}
+#bloco-principal{
+    border: solid black 1px;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+    flex-direction: column;
+    justify-content: baseline;
+    background-color: rgb(122, 196, 196);
+}
+input{
+    height: 30px;
+    text-decoration: none;
+    border: double black 2px;
+}
+p{
+    font-size: 20px;
+    font-weight: bolder;
+}

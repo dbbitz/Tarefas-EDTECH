@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>ex1</title>
+</head>
+
+<body>
+    <div id="bloco-principal">
+        <div id="bloco-interno">
+        <h1>Selecione um carro: </h1>
+        <select name="carro" onchange="carros(this.value)" >
+            <option value="uno">Selecione uma Opção</option>
+            <option value="ferrari">Ferrari F8</option>
+            <option value="lambo">Lamborghini Diablo GT</option>
+            <option value="porsche">Porsche 911</option>
+            <option value="bmw">BMW 320i</option>
+            <option value="mercedez">Mercedez C200</option>
+        </select>
+        </div>
+        <img src="uno.jpg" alt="" width="400px" height="300px">
+        <div id="info">
+            <p id="modelo">Modelo: </p>
+            <p id="fabricante">Fabricante: </p>
+            <p id="vmax">Velocidade Máxima: </p>
+            <p id="0a100">Tempo de 0-100Km: </p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

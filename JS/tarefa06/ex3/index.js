@@ -29,7 +29,7 @@ function cont() {
             seg = 59
             min = min - 1
         }
-        if((min*60+seg)< temposeg && (min*60+seg)>0 || seg<1){
+        if((min*60+seg)< temposeg && (min*60+seg)>0 ){
             document.getElementById('bloco-principal').style.background = "rgb(228, 48, 48)"
             titulo.innerHTML = "Seu tempo está acabando"
         }
