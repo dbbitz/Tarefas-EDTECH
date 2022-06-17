@@ -14,7 +14,7 @@ function enviar() {
         genero: document.getElementById('genero').value,
     }
     const sobj = JSON.stringify(obj)
-    console.log(obj.data)   
+     
     try {
         if (obj.nome.length < 7) throw 'Field “name” is invalid!'
     } catch (erro) {
@@ -44,8 +44,30 @@ function enviar() {
     try{
         if(obj.genero != 'masculino' && obj.genero != 'feminino') throw 'Field “gender” is invalid!'
     } catch (erro){
-        document.getElementById('genero-erro').innerHTML = 'Field "gender” is invalid!'
+        document.getElementById('genero-erro').innerHTML = erro
         document.getElementById('genero').style.border = 'solid red 1px'
     }
-       
+    if(obj.nome.length > 7){
+        document.getElementById('nome-erro').innerText = obj.nome
+        document.getElementById('nome').style.border = "solid green 1px"
+    }
+    if(dia < 31 && mes < 12 && ano < 2022 || dia != "" && mes != "" && ano != ""){
+        document.getElementById('data-erro').innerText = `${dia}/${mes}/${ano}`
+        document.getElementById('dia').style.border = 'solid green 1px'
+        document.getElementById('mes').style.border = 'solid green 1px'
+        document.getElementById('ano').style.border = 'solid green 1px'
+    }
+    if(isNaN(obj.peso) == false && obj.peso != ""){
+        document.getElementById('peso-erro').innerHTML = `${obj.peso} kg`
+        document.getElementById('peso').style.border = "solid green 1px"
+    }
+    if(obj.altura % parseInt(obj.altura) == 0){
+        document.getElementById('altura-erro').innerHTML = `${obj.altura} cm`
+        document.getElementById('altura').style.border = 'solid green 1px'
+    }
+    if(obj.genero == 'masculino' || obj.genero == 'feminino'){
+        document.getElementById('genero-erro').innerHTML = obj.genero
+        document.getElementById('genero').style.border = 'solid green 1px'
+    }
+    console.log(JSON.stringify(obj))
 }
