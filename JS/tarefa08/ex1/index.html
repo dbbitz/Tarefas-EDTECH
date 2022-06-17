@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>ex1</title>
+</head>
+
+<body>
+    <div id="bloco-principal">
+        <div style="display: flex; flex-direction:row;">
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <p id="nome-erro"></p>
+        </div>
+
+        <div style="display:flex; flex-direction:row;">
+            <input type="number" name="" class="data" placeholder="dia" id="dia">
+            <input type="number" name="" class="data" placeholder="mes" id="mes">
+            <input type="number" name="" class="data" placeholder="ano " id="ano">
+            <p id="data-erro"></p>
+        </div>
+
+        <div style="display:flex; flex-direction:row;">
+            <input type="text" name="peso" id="peso" placeholder="peso">
+            <p id="peso-erro"></p>
+        </div>
+        <div style="display:flex; flex-direction:row;">
+            <input type="number" name="altura" id="altura" placeholder="altura">
+            <p id="altura-erro"></p>
+        </div>
+        <div style="display:flex; flex-direction:row;">
+            <select name="genero" id="genero">
+                <option value="">Selecione um gênero</option>
+                <option value="masculino">masculino</option>
+                <option value="feminino">feminino</option>
+            </select>
+            <p id="genero-erro"></p>
+        </div>
+        <input type="button" value="Enviar" id="botao" onclick="enviar()">
+        <p>a</p>
+        <script src="index.js"></script>
+</body>
+
+</html>
