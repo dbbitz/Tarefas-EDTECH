@@ -1,15 +1,10 @@
-const txtarea = document.querySelector("textarea")
-const msg = document.getElementById('msg')
-function enviar(){
-    txtarea.innerHTML += `${msg.value} \n`
-    txtarea.scrollTop = txtarea.scrollHeight
-}
-addEventListener('keydown', function(event){
-    if(event.key == "Enter"){
-        enviar()
-        
+function enviar() {
+    try {
+        let objeto = JSON.parse(document.querySelector('textarea').value);
+        document.querySelector('p').innerHTML = 'Parsable JSON string!'
+        console.log(objeto);
+    } catch (erro) {
+        console.log(erro)
     }
-})
-function limpar(){
-    txtarea.innerHTML = ""
+
 }

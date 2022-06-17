@@ -1,15 +1,7 @@
-const txtarea = document.querySelector("textarea")
-const msg = document.getElementById('msg')
-function enviar(){
-    txtarea.innerHTML += `${msg.value} \n`
-    txtarea.scrollTop = txtarea.scrollHeight
-}
-addEventListener('keydown', function(event){
-    if(event.key == "Enter"){
-        enviar()
-        
-    }
-})
-function limpar(){
-    txtarea.innerHTML = ""
-}
+const objeto1 = {};
+objeto1['Atributo com espaços'] = 1;
+console.log(objeto1);
+
+const objeto2 = {};
+Object.defineProperty(objeto2, 'Atributo com espaços' ,{value:1});
+console.log(objeto2);
