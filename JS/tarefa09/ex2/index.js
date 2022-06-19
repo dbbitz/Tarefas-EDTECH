@@ -53,12 +53,12 @@ function exp(num1,num2){
 }
 let i = 0
 function divisaofalsa(num1,num2){
-    i = i + 1
+    i = sum(i,1)
     if(num1 == num2){
         return i
     }
     else{
-        return divisaofalsa(num1-num2,num2)
+        return divisaofalsa(subtract(num1,num2),num2)
     }
 }
 function divisaoreal(num1,num2){
