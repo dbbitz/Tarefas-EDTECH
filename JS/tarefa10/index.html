@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="cadastro">
+        <div>
+            <div class="itens-cadastro">
+                <label>Nome:</label>
+                <input type="text" id="nome">
+            </div>
+            <div class="itens-cadastro">
+                <label>Valor:</label>
+                <input type="text" id="valor">
+            </div>
+            <div class="itens-cadastro">
+                <label>Descrição:</label>
+                <input type="text" id="descricao">
+            </div>
+            <div id="botoes">
+                <input type="button" value="Incluir" class="botoes" onclick="incluir()">
+                <input type="button" value="Listar" class="botoes" onclick="listar()">
+            </div>
+        </div>
+             <div id="tabela">
+                <table border="1"></table>
+             </div>
+    </div>
+    <div id="pop-up">
+        <div>
+            <label for="id">Id: </label>
+        <input type="text" name="id" id="id-editar">
+        </div>
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome-editar"> 
+        </div>
+        <div>
+            <label for="valor">Valor:</label>
+            <input type="text" id="valor-editar" name="valor">
+        </div>
+        <div>
+            <label for="descricao">Descrição: </label>
+            <input type="text" name="descricao" id="descricao-editar">
+        </div>
+        <div>
+            <input type="button" value="editar" id="confirm-edit">
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
