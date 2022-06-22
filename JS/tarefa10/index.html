@@ -28,19 +28,21 @@
                 <input type="button" value="Incluir" class="botoes" onclick="incluir()">
                 <input type="button" value="Listar" class="botoes" onclick="listar()">
             </div>
+            <p id="mensagem"></p>
         </div>
-             <div id="tabela">
-                <table border="1"></table>
-             </div>
+        <div id="tabela">
+            <table border="1"></table>
+        </div>
     </div>
     <div id="pop-up">
+        <input type="button" class="x" value="x" onclick="fechar1()">
         <div>
             <label for="id">Id: </label>
-        <input type="text" name="id" id="id-editar">
+            <input type="text" name="id" id="id-editar">
         </div>
         <div>
             <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome-editar"> 
+            <input type="text" name="nome" id="nome-editar">
         </div>
         <div>
             <label for="valor">Valor:</label>
@@ -51,9 +53,21 @@
             <input type="text" name="descricao" id="descricao-editar">
         </div>
         <div>
-            <input type="button" value="editar" id="confirm-edit">
+            <input type="button" value="editar" class="botoes" id="confirm-edit">
         </div>
+    </div>
+    <div id="popup2">
+        <input type="button" class="x" value="x" onclick="fechar2()">
+        <div>
+            <p id="popup2-id">Id:</p>
+            <p id="popup2-nome">Nome:</p>
+            <p id="popup2-valor">Valor: </p>
+            <p id="popup2-descricao">Descrição: </p>
+            <p id="popup2-horario">Horário: </p>
+        </div>
+        
     </div>
 </body>
 <script src="index.js"></script>
+
 </html>

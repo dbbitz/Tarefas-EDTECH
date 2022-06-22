@@ -18,7 +18,7 @@ input{
 .itens-cadastro{
     display: flex;
     justify-content:flex-end;
-    border: solid black 1px;
+    
     width: 270px;
     margin: 5px 10px;
 }
@@ -30,7 +30,7 @@ table{
     border: solid black 1px;
 }
 #botoes{
-    border: solid black 1px;
+    
     width: 270px;
     margin: 5px 10px;
 }
@@ -46,4 +46,24 @@ td{
     display: none;
     border: solid black 1px;
     flex-direction: column;
+}
+#popup2{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 253, 253);
+    position: fixed;
+    margin-top: 100px;
+    display: none;
+    border: solid black 1px;
+    flex-direction: column;
+    padding-left: 10%;
+}
+.x{
+    display: flex;
+    justify-content: end;
+    height: 20px;
+    width: 20px;
+    border: solid black 1px;
+    margin-top: 2%;
+    margin-left: 93%;
 }
