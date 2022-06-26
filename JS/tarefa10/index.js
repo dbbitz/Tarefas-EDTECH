@@ -33,13 +33,12 @@ function detalhes(x) {
     let descricao2 = document.getElementById('popup2-descricao')
     let horario2 = document.getElementById('popup2-horario')
     let popup = document.getElementById('popup2')
-    let i = 0
     let position = 0
-    while (i < produtos.length) {
+    
+    for(i=0;i < produtos.length;i++) {
         if (produtos[i].id == x) {
             position = i
         }
-        i++
     }
     id2.innerHTML = `ID: ${produtos[position].id}`
     nome2.innerHTML = `Nome: ${produtos[position].nome}`
@@ -48,13 +47,34 @@ function detalhes(x) {
     horario2.innerHTML = `Horário: ${produtos[position].incluidoEm}`
     popup.style.display = 'flex'
 }
+function alfabetica(){
+    produtos.sort(function (a,b){
+        if(a.nome<b.nome){
+            return -1
+        }
+        else {
+            return true
+        }
+    })
+    console.log(produtos)
+    listar()
+}
+function numerica(){
+    produtos.sort(function (a,b){
+        if(a.id<b.id){
+            return -1
+        }
+        else {
+            return true
+        }
+    })
+    console.log(produtos)
+    listar()
+}
 function listar() {
-
-    let i = 0
-    tabela.innerHTML = '<tr> <td>Id</td> <td>Nome</td> <td>Valor</td> <td>Descrição</td> <td>Editar</td> <td>Apagar</td> </tr>'
-    while (i < produtos.length) {
+    tabela.innerHTML = '<tr> <td onclick="numerica()">Id</td> <td onclick="alfabetica()">Nome</td> <td>Valor</td> <td>Descrição</td> <td>Editar</td> <td>Apagar</td> </tr>'
+    for (i=0;i < produtos.length;i++) {
         tabela.innerHTML += `<tr> <td onclick="detalhes(${produtos[i].id})">${produtos[i].id}</td> <td>${produtos[i].nome}</td> <td>${produtos[i].valor}</td> <td>${produtos[i].descricao}</td> <td><img src="editar.png" onclick="editar(${produtos[i].id})"></td> <td><img src="lixeira.png" onclick="excluir(${produtos[i].id})"></td> </tr>`
-        i++
     }
     console.log(i)
     console.log(produtos)
@@ -81,34 +101,31 @@ function incluir() {
 
         }
     } catch (e) {
-        alert(e)
-        mensagem.innerHTML = ''
+        mensagem.innerHTML = e
+        
     }
 }
 
 //função para excluir o produto da lista após clicar no botão da lixeira
 function excluir(x) {
-    let j = 0
     console.log(x)
-    while (j < produtos.length) {
+    for (j=0;j < produtos.length;j++) {
         if (produtos[j].id == x) {
             console.log(produtos[j])
             produtos = meusplice(produtos, j)
         }
-        j++
+        
     }
     console.log(produtos)
 
 }
 function editar(x) {
     // achar index do array (inicio)
-    let i = 0
     let position = 0
-    while (i < produtos.length) {
+    for (i=0;i < produtos.length;i++) {
         if (produtos[i].id == x) {
             position = i
         }
-        i++
     }
     // Colocando os valores de antes nos inputs a serem editados
     let id1 = document.getElementById('id-editar')
@@ -132,4 +149,17 @@ function editar(x) {
         popup.style.display = 'none'
         listar()
     })
+}
+
+function pesquisar(){
+    let procura = document.getElementById('pesquisa').value
+    if(procura==''){
+        return listar()
+    }
+    tabela.innerHTML = '<tr> <td onclick="numerica()">Id</td> <td onclick="alfabetica()">Nome</td> <td>Valor</td> <td>Descrição</td> <td>Editar</td> <td>Apagar</td> </tr>'
+    for(i=0;i<produtos.length;i++){
+        if(produtos[i].nome == procura){
+            tabela.innerHTML += `<tr> <td onclick="detalhes(${produtos[i].id})">${produtos[i].id}</td> <td>${produtos[i].nome}</td> <td>${produtos[i].valor}</td> <td>${produtos[i].descricao}</td> <td><img src="editar.png" onclick="editar(${produtos[i].id})"></td> <td><img src="lixeira.png" onclick="excluir(${produtos[i].id})"></td> </tr>`
+        }
+    }
 }

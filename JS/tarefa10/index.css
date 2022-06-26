@@ -1,6 +1,7 @@
 body{
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 #cadastro{
     border: solid black 1px;
@@ -9,6 +10,13 @@ body{
     display: flex;
     flex-direction: column;
     padding-top: 5%;
+    align-items: center;
+}
+#preencher{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 input{
@@ -24,13 +32,16 @@ input{
 }
 table{
     margin-top: 5%;
+    background-color: rgb(244, 244, 255);
 }
 .botoes{
     height: 22px;
     border: solid black 1px;
+    
 }
 #botoes{
-    
+    display: flex;
+    justify-content: end;
     width: 270px;
     margin: 5px 10px;
 }

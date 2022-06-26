@@ -6,12 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@100&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <div id="cadastro">
-        <div>
+        <div id="preencher">
+            <div class="itens-cadastro">
+                
+                <input type="text" id="pesquisa">
+                <input type="button" value="Pesquisar" class="botoes" onclick="pesquisar()">
+            </div>
             <div class="itens-cadastro">
                 <label>Nome:</label>
                 <input type="text" id="nome">
@@ -31,7 +41,7 @@
             <p id="mensagem"></p>
         </div>
         <div id="tabela">
-            <table border="1"></table>
+            <table></table>
         </div>
     </div>
     <div id="pop-up">
@@ -65,7 +75,7 @@
             <p id="popup2-descricao">Descrição: </p>
             <p id="popup2-horario">Horário: </p>
         </div>
-        
+
     </div>
 </body>
 <script src="index.js"></script>
