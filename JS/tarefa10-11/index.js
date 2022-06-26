@@ -117,7 +117,7 @@ function excluir(x) {
         
     }
     console.log(produtos)
-
+    listar()
 }
 function editar(x) {
     // achar index do array (inicio)
