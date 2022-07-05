@@ -9,12 +9,10 @@ let brigadeiros = document.getElementById('brigadeiros')
 let doces = document.getElementById('doces')
 let cupcakes = document.getElementById('cupcakes')
 
-function imagem(produto){
-    return `<img scr="${produto}">`
-}
+
 
 brigadeiros.addEventListener('click', () => {
-    main.innerHTML = `${pageBrigadeiro() + imagem('brigadeiro.webp') }`
+    main.innerHTML = `${pageBrigadeiro()}`
     history.pushState({},'','brigadeiros/')
 })
 doces.addEventListener('click', () => {

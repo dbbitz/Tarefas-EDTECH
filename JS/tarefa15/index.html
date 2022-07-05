@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotações</title>
+</head>
+
+<body>
+    <select name="Moedas" id="moedas">
+        <option value="dolar">Dólar</option>
+        <option value="euro">Euro</option>
+        <option value="libra">Libra</option>
+        <option value="btc">BitCoin</option>
+    </select>
+    <label for="data-inicial">Data de início</label>
+    <input type="date" name="data-inicial" id="data-inicial">
+    <label for="data-final">Data de fim</label>
+    <input type="date" name="data-final" id="data-final">
+    <input type="button" value="OK" id="btn" onclick="okay()">
+
+    <table border="1" style="margin-top: 50px;">
+        <tr>
+            <td>Última cotação</td>
+            <td>Data e hora</td>
+            <td>Max-Min do dia</td>
+            <td>Valor de fechamento</td>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>
