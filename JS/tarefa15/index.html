@@ -10,26 +10,28 @@
 
 <body>
     <select name="Moedas" id="moedas">
-        <option value="dolar">Dólar</option>
-        <option value="euro">Euro</option>
-        <option value="libra">Libra</option>
-        <option value="btc">BitCoin</option>
+        <option value="USD">Dólar</option>
+        <option value="EUR">Euro</option>
     </select>
     <label for="data-inicial">Data de início</label>
     <input type="date" name="data-inicial" id="data-inicial">
     <label for="data-final">Data de fim</label>
     <input type="date" name="data-final" id="data-final">
     <input type="button" value="OK" id="btn" onclick="okay()">
-
-    <table border="1" style="margin-top: 50px;">
-        <tr>
-            <td>Última cotação</td>
-            <td>Data e hora</td>
-            <td>Max-Min do dia</td>
-            <td>Valor de fechamento</td>
-        </tr>
-    </table>
+    <div style="display: flex; flex-direction:row; margin-top: 50px; width: 100%; justify-content: space-around;">
+        <table border="1">
+            <tr>
+                <td>Data e hora</td>
+                <td>Maximo</td>
+                <td>Minimo</td>
+                <td>Valor de fechamento</td>
+            </tr>
+        </table>
+        <div id="cot">Cotação atual: </div>
+        <p>Como a API está bugada eu fiz um que entrega pelo menos a data de inicio</p>
+    </div>
     <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
 </body>
 
 </html>
