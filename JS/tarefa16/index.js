@@ -2,6 +2,8 @@ const btn = document.getElementById('btn')
 const tabela = document.querySelector('table')
 const mapa = document.querySelector('iframe')
 const cepbox = document.getElementById('cep')
+const bloco = document.getElementById('bloco-principal')
+const exibir = document.getElementById('exibir')
 const info = []
 let resultado = document.getElementById('info')
 
@@ -50,7 +52,7 @@ btn.addEventListener('click', function getAddress() {
                 btn.style.cursor = 'default'
             }
             else{
-                mapa.style.display = 'flex'
+                mapa.style.display = 'none'
                 //Api com Parametros de Latitude e Longitude
                 mapa.src = `https://maps.google.com.br/maps?q=${data.lat},${data.lng}&output=embed&dg=oo`
                 tabela.style.display = 'flex'
@@ -62,8 +64,12 @@ btn.addEventListener('click', function getAddress() {
                 <td>${data.lng}</td>
                 <td>${data.lat}</td>
             `
+            exibir.style.display = 'flex'
                 btn.style.cursor = 'default'
             }
+            exibir.addEventListener('click', () => {
+                mapa.style.display = "flex"
+            })
         
         })
 })

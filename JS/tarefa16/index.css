@@ -43,6 +43,10 @@ td{
     
 }
 iframe{
-    margin-top: 10%;
+    margin-top: 20px;
+    display: none;
+}
+#exibir{
+    margin-top: 20px;
     display: none;
 }

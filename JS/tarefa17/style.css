@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+table{
+    margin-top: 5%;
+    display: none;
+    border: solid black 1px;
+    background-color: black;
+}
+td{
+    text-align: center;
+    border: solid black 1px;
+    background-color: aliceblue;
+}
+select{
+    border-radius: 0%;
+    border: solid black 2px;
+    background-color:aliceblue
+}
