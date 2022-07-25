@@ -1,0 +1,28 @@
+#sorteador{
+    border: solid black 1px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+#cartela{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black 1px;
+    width: 310px;
+    
+}
+.caixas{
+    height: 60px;
+    width: 60px;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin-top: 5%;
+}

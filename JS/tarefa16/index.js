@@ -21,7 +21,7 @@ cepbox.addEventListener('keydown', function (event) {
 
 
 // Evento que dispara função que lista as informações sobre o cep.
-btn.addEventListener('click', function getAddress() {
+btn.addEventListener('click',async function getAddress() {
     tabela.innerHTML = `
         <tr>
             <td>Rua</td>
@@ -36,25 +36,28 @@ btn.addEventListener('click', function getAddress() {
     `
     let cep = document.getElementById('cep').value
     btn.style.cursor = 'wait'
-    fetch(`https://cep.awesomeapi.com.br/json/${cep}`)
+    new Promise(async (reject,resolve) => {
+        await fetch(`https://cep.awesomeapi.com.br/json/${cep}`)
         .then((response) => {
             console.log(response.status)
             if(response.status != 200){
                 alert("Cep Inválido")
+                reject()
             }
             return response.json()
             
         })
-        .then((data) => {
+        .then(async (data) => {
             if(data.address == undefined){
                 mapa.style.display = 'none'
                 tabela.style.display = 'none'
                 btn.style.cursor = 'default'
+                reject()
             }
             else{
                 mapa.style.display = 'none'
                 //Api com Parametros de Latitude e Longitude
-                mapa.src = `https://maps.google.com.br/maps?q=${data.lat},${data.lng}&output=embed&dg=oo`
+                mapa.src = await `https://maps.google.com.br/maps?q=${data.lat},${data.lng}&output=embed&dg=oo`
                 tabela.style.display = 'flex'
                 document.getElementById('info').innerHTML += `
                 <td>${data.address}</td>
@@ -72,5 +75,7 @@ btn.addEventListener('click', function getAddress() {
             })
         
         })
+    })
+    
 })
 
